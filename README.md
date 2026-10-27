@@ -88,3 +88,21 @@
 #### `git push` - To send your commits to your GitHub repository, use the `git push` command. You only need to use `git push -u origin main` the first time you push your project to the remote repository. After that, you can simply use `git push`.
 
 #### By doing this, you will update your project in your GitHub repository with the latest version.
+
+#### <ins>Some Other Git Commands:</ins>
+
+#### `git clone <remote repository url>` - You can clone any public GitHub repository, but if you don't have permission to modify it, you won't be able to push your changes to the remote repository.
+
+#### `git log` and `git log --oneline` - Use these commands to view your commit history.
+
+- #### `git log` displays detailed information about each commit, including the commit hash, author, date, and commit message.
+
+- #### `git log --oneline` displays a more concise version of the commit history, showing each commit's abbreviated hash and commit message on a single line.
+
+#### <strong>Note:</strong> You can use these commands to see which commits exist in your local repository. However, they do not directly tell you whether your local branch is up to date with the remote repository. To check for differences between your local and remote branches, use `git fetch` followed by `git status`.
+
+#### `git fetch` - This command downloads the latest commits, files, and references from a remote repository to your local repository, but it does not modify or merge these changes into your current working branch.
+
+#### `git pull` - With this command, you download the latest updates from the remote repository, includding the commit history.
+
+<strong>Attention:</strong> This command may cause merge conflicts if you and someone else have modified the same parts of a file in your local and remote branches. If this happens, you will need to resolve the conflicts before completing the merge.
