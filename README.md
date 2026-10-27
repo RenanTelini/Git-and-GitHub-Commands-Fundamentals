@@ -70,3 +70,21 @@
 - #### To creates a commit containing the staged changes, run: `git commit -m "Your commit message"`. The -m flag lets you provide a message describing the changes.
 
 - #### To push your changes to GitHub, run: `git push -u origin main`. Uploads your local main branch and its commits to the remote repository named origin. The -u flag sets the upstream branch, allowing you to use git push and git pull without specifying the remote and branch in future commands.
+
+#### After that, you just need to go to your GitHub repository and refresh the page.
+
+#### <ins>How To Create a New Commit</ins>
+
+#### After sending the first version of your project to your GitHub repository, you can use these commands to create and send a new version of your project:”
+
+#### `git status` - After making any changes to your project, use this command to check the changes.
+
+#### `git add <file>` or `git add .` - After finishing your changes, use one of these commands to stage them. You can stage files individually using `git add <file>` or stage all changes at once using `git add .`.
+
+<strong>Attention:</strong> Use the `git status` command to check whether you have staged any changes you didn't intend to include.
+
+#### `git commit -m "Your commit message"` - You need to commit your changes every time you make any modifications to your project.
+
+#### `git push` - To send your commits to your GitHub repository, use the `git push` command. You only need to use `git push -u origin main` the first time you push your project to the remote repository. After that, you can simply use `git push`.
+
+#### By doing this, you will update your project in your GitHub repository with the latest version.
