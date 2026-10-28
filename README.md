@@ -106,3 +106,25 @@
 #### `git pull` - With this command, you download the latest updates from the remote repository, includding the commit history.
 
 <strong>Attention:</strong> This command may cause merge conflicts if you and someone else have modified the same parts of a file in your local and remote branches. If this happens, you will need to resolve the conflicts before completing the merge.
+
+#### `git status` - The `git status` command allows you to check the current state of your working directory and staging area. It displays information about changes in your project, including the following:
+
+- Modified - When you modify a file in your project.
+- Untracked - New files that Git is not tracking yet.
+- Deleted - Files that have been deleted from your working directory.
+- Staged - Changes that have been added to the staging area using `git add .` or `git add <file>`. These changes are ready to be included in the next commit.
+- Committed - Changes that have been saved in a commit in your local repository.
+
+`git diff` - "diff" stands for "difference". This command shows the changes in your working directory that have not yet been staged.
+
+`git diff --staged` - shows the differences between staged changes and the last commit.
+
+`git checkout <commit hash>` or `git checkout HASH~1` - Temporarily switch to a specific commit or its parent commit, respectively.
+
+Tip: Use "~1" to refer to the parent commit of the specified hash. To return to your current branch, run `git checkout <branch-name>`
+
+<strong>Important:</strong> Before checking out to return to HEAD, make sure there are no uncommitted changes in your working directory. If you accidentally modified any files, discard the changes using:
+
+- `git reset`
+- `git clean -df`
+- `git checkout -- .`
