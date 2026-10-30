@@ -125,6 +125,44 @@ Tip: Use "~1" to refer to the parent commit of the specified hash. To return to 
 
 <strong>Important:</strong> Before checking out to return to HEAD, make sure there are no uncommitted changes in your working directory. If you accidentally modified any files, discard the changes using:
 
-- `git reset`
-- `git clean -df`
-- `git checkout -- .`
+- `git reset` - Removes changes from the staging area (index), effectively undoing the `git add` operation.
+
+- `git clean -df` - Removes untracked files and directories from the working directory.
+
+- `git checkout -- .` - Discards all local modifications to tracked files in the current directory and its subdirectories.
+
+#### <strong>Tip:</strong> Always use `git status` before and after these operations to check the state of your working directory.
+
+#### `git reset` - Removes modified files from the staging area.
+
+#### `git restore <file>` - Discards local modifications to a specific file, restoring its content to the state recorded in the staging area (index).
+
+#### `git restore .` - Discards local modifications to all tracked files in the current directory and its subdirectories.
+
+#### `git restore --staged <file>` - The file is removed from the staging area, but its modifications are preserved in the working directory.
+
+#### `git reset --soft HEAD~1` - Undoes the last commit while keeping all its changes in the staging area.
+
+- Removes the last commit from the branch history.
+- Preserves all file modifications.
+- Keeps changes staged and ready for a new commit.
+
+#### `git reset --hard <commit>` - Moves the current branch to the specified commit, discarding staged and unstaged changes in tracked files.
+
+- Resets the branch history to the specified commit.
+- Clears the staging area.
+- Discards local modifications to tracked files.
+
+#### <strong>Attention:</strong> This command can permanently delete uncommitted changes.
+
+#### `git push -f` - Forces local commits to be pushed to the remote repository, overwriting the remote branch history when necessary.
+
+- Updates the remote branch with the local history.
+- Can overwrite existing commits in the remote repository.
+- May cause other collaborators to lose their changes.
+
+#### <strong>Attention:</strong> Use with caution, as it can overwrite other people's work.
+
+#### `git remote -v` - Displays the remote repositories connected to your project and their URLs.
+
+#### `git remote set-url origin <new url>` - Changes the URL of the remote repository named origin.
