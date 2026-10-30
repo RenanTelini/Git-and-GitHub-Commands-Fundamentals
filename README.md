@@ -179,11 +179,11 @@
 - Enter insert mode by pressing the "i" key on your keyboard.
 - This enables text editing. Notice that "--INSERT--" appears in the bottom-left corner of the editor.
 
-<img src="imagens/VIM Editor.png">
+<img src="Imagens\VIM Editor.png">
 
 - Type your commit message.
 - To save your changes and exit the editor, press "Esc", type ":wq", and press "Enter".
 
-<img src="imagens/VIM Editor - !wq.png">
+<img src="Imagens/VIM Editor - !wq.png">
 
 - To exit without saving your changes, press "Esc", type ":q!", and press "Enter".
