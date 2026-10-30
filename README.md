@@ -166,3 +166,24 @@ Tip: Use "~1" to refer to the parent commit of the specified hash. To return to 
 #### `git remote -v` - Displays the remote repositories connected to your project and their URLs.
 
 #### `git remote set-url origin <new url>` - Changes the URL of the remote repository named origin.
+
+### <ins>VIM Editor</ins>
+
+#### These actions may open the VIM editor in the terminal:
+
+- Creating a commit without a message. - For example, when you run `git commit` and forget to include the `-m "<message commit>"` argument.
+- Performing a three-way merge.
+
+#### If this happens, follow these steps:
+
+- Enter insert mode by pressing the "i" key on your keyboard.
+- This enables text editing. Notice that "--INSERT--" appears in the bottom-left corner of the editor.
+
+#### <img src="imagens/VIM Editor.png">
+
+- Type your commit message.
+- To save your changes and exit the editor, press "Esc", type ":wq", and press "Enter".
+
+#### <img src="imagens/VIM Editor - !wq.png">
+
+- To exit without saving your changes, press "Esc", type ":q!", and press "Enter".
