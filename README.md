@@ -81,7 +81,7 @@
 
 #### `git add <file>` or `git add .` - After finishing your changes, use one of these commands to stage them. You can stage files individually using `git add <file>` or stage all changes at once using `git add .`.
 
-<strong>Attention:</strong> Use the `git status` command to check whether you have staged any changes you didn't intend to include.
+#### <strong>Attention:</strong> Use the `git status` command to check whether you have staged any changes you didn't intend to include.
 
 #### `git commit -m "Your commit message"` - You need to commit your changes every time you make any modifications to your project.
 
@@ -105,7 +105,7 @@
 
 #### `git pull` - With this command, you download the latest updates from the remote repository, includding the commit history.
 
-<strong>Attention:</strong> This command may cause merge conflicts if you and someone else have modified the same parts of a file in your local and remote branches. If this happens, you will need to resolve the conflicts before completing the merge.
+#### <strong>Attention:</strong> This command may cause merge conflicts if you and someone else have modified the same parts of a file in your local and remote branches. If this happens, you will need to resolve the conflicts before completing the merge.
 
 #### `git status` - The `git status` command allows you to check the current state of your working directory and staging area. It displays information about changes in your project, including the following:
 
@@ -115,15 +115,15 @@
 - Staged - Changes that have been added to the staging area using `git add .` or `git add <file>`. These changes are ready to be included in the next commit.
 - Committed - Changes that have been saved in a commit in your local repository.
 
-`git diff` - "diff" stands for "difference". This command shows the changes in your working directory that have not yet been staged.
+#### `git diff` - "diff" stands for "difference". This command shows the changes in your working directory that have not yet been staged.
 
-`git diff --staged` - shows the differences between staged changes and the last commit.
+#### `git diff --staged` - Shows the differences between staged changes and the last commit.
 
-`git checkout <commit hash>` or `git checkout HASH~1` - Temporarily switch to a specific commit or its parent commit, respectively.
+#### `git checkout <commit hash>` or `git checkout HASH~1` - Temporarily switch to a specific commit or its parent commit, respectively.
 
-Tip: Use "~1" to refer to the parent commit of the specified hash. To return to your current branch, run `git checkout <branch-name>`
+#### <strong>Tip:</strong> Use "~1" to refer to the parent commit of the specified hash. To return to your current branch, run `git checkout <branch-name>`
 
-<strong>Important:</strong> Before checking out to return to HEAD, make sure there are no uncommitted changes in your working directory. If you accidentally modified any files, discard the changes using:
+#### <strong>Important:</strong> Before checking out to return to HEAD, make sure there are no uncommitted changes in your working directory. If you accidentally modified any files, discard the changes using:
 
 - `git reset` - Removes changes from the staging area (index), effectively undoing the `git add` operation.
 
@@ -179,11 +179,11 @@ Tip: Use "~1" to refer to the parent commit of the specified hash. To return to 
 - Enter insert mode by pressing the "i" key on your keyboard.
 - This enables text editing. Notice that "--INSERT--" appears in the bottom-left corner of the editor.
 
-#### <img src="imagens/VIM Editor.png">
+<img src="imagens/VIM Editor.png">
 
 - Type your commit message.
 - To save your changes and exit the editor, press "Esc", type ":wq", and press "Enter".
 
-#### <img src="imagens/VIM Editor - !wq.png">
+<img src="imagens/VIM Editor - !wq.png">
 
 - To exit without saving your changes, press "Esc", type ":q!", and press "Enter".
